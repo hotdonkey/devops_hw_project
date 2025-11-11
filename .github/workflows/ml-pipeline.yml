@@ -28,14 +28,14 @@ jobs:
       run: |
         python scripts/ml_pipeline.py
 
+
     - name: Upload reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ml-reports
         path: |
           reports/
           models/
-        retention-days: 30
 
     - name: List MLflow results
       run: |
