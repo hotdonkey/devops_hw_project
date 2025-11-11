@@ -1,0 +1,14 @@
+artifact_uri: /Users/nfox/Documents/my_docks/devops_hw_project/notebooks/mlruns/335029681160073907/c793611cf45e47a6b8e5d7735dcc6a2c/artifacts
+end_time: 1762863838412
+entry_point_name: ''
+experiment_id: '335029681160073907'
+lifecycle_stage: active
+run_id: c793611cf45e47a6b8e5d7735dcc6a2c
+run_name: casual-kite-322
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762863835757
+status: 3
+tags: []
+user_id: nfox

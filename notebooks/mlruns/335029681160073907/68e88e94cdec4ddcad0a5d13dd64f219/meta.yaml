@@ -1,0 +1,14 @@
+artifact_uri: /Users/nfox/Documents/my_docks/devops_hw_project/notebooks/mlruns/335029681160073907/68e88e94cdec4ddcad0a5d13dd64f219/artifacts
+end_time: 1762863716955
+entry_point_name: ''
+experiment_id: '335029681160073907'
+lifecycle_stage: active
+run_id: 68e88e94cdec4ddcad0a5d13dd64f219
+run_name: placid-cub-501
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762863713709
+status: 3
+tags: []
+user_id: nfox
