@@ -1,0 +1,36 @@
+artifact_path: /Users/nfox/Documents/my_docks/devops_hw_project/notebooks/mlruns/335029681160073907/models/m-eee3e97c0da44da1a08c8dcece0ac470/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.14
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+mlflow_version: 3.6.0
+model_id: m-eee3e97c0da44da1a08c8dcece0ac470
+model_size_bytes: 178046
+model_uuid: m-eee3e97c0da44da1a08c8dcece0ac470
+prompts: null
+run_id: 947f0d1940bf40d8b8e3a0e5f4aa2d53
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "sepal length (cm)", "required": true}, {"type":
+    "double", "name": "sepal width (cm)", "required": true}, {"type": "double", "name":
+    "petal length (cm)", "required": true}, {"type": "double", "name": "petal width
+    (cm)", "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-11-11 16:17:07.088799'

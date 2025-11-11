@@ -1,0 +1,10 @@
+artifact_location: /Users/nfox/Documents/my_docks/devops_hw_project/notebooks/mlruns/335029681160073907/models/m-eee3e97c0da44da1a08c8dcece0ac470/artifacts
+creation_timestamp: 1762877827082
+experiment_id: '335029681160073907'
+last_updated_timestamp: 1762877830973
+model_id: m-eee3e97c0da44da1a08c8dcece0ac470
+model_type: null
+name: random_forest_model
+source_run_id: 947f0d1940bf40d8b8e3a0e5f4aa2d53
+status: 2
+status_message: null

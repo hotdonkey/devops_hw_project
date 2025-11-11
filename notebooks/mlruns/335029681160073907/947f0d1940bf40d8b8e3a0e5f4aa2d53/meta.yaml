@@ -1,0 +1,14 @@
+artifact_uri: /Users/nfox/Documents/my_docks/devops_hw_project/notebooks/mlruns/335029681160073907/947f0d1940bf40d8b8e3a0e5f4aa2d53/artifacts
+end_time: 1762877830987
+entry_point_name: ''
+experiment_id: '335029681160073907'
+lifecycle_stage: active
+run_id: 947f0d1940bf40d8b8e3a0e5f4aa2d53
+run_name: nervous-kite-801
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762877826971
+status: 3
+tags: []
+user_id: nfox
