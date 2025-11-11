@@ -31,8 +31,8 @@ def load_and_prepare_data():
     df['target'] = data.target
     
     # Сохраняем данные для послежующего использования
-    os.makedirs("../data/", exist_ok=True)
-    df.to_csv('../data/iris.csv', index=False)
+    os.makedirs("data/", exist_ok=True)
+    df.to_csv('data/iris.csv', index=False)
     return df
 
 
@@ -44,9 +44,9 @@ def deepchecks_analysis(df):
     integrity_result = integrity_suite.run(dataset)
     
     # Сохраняем отчет
-    os.makedirs("../reports/", exist_ok=True)
-    integrity_result.save_as_html('../reports/deepchecks_report.html')
-    print("Deepchecks отчет сохранен в ../reports/deepchecks_report.html")
+    os.makedirs("reports/", exist_ok=True)
+    integrity_result.save_as_html('reports/deepchecks_report.html')
+    print("Deepchecks отчет сохранен в reports/deepchecks_report.html")
     
     return integrity_result
 
@@ -63,12 +63,11 @@ def evidently_analysis(df):
     report.run(reference_data=reference_data, current_data=current_data)
     
     # Сохраняем отчет
-    os.makedirs("../reports/", exist_ok=True)
-    report.save_html('../reports/evidently_report.html')
-    print("EvidentlyAI отчет сохранен в ../reports/evidently_report.html")
+    os.makedirs("reports/", exist_ok=True)
+    report.save_html('reports/evidently_report.html')
+    print("EvidentlyAI отчет сохранен в reports/evidently_report.html")
     
     return report
-
 
 
 def mlflow_experiment(df):
@@ -114,8 +113,8 @@ def mlflow_experiment(df):
         )
         
         # Сохранение модели
-        os.makedirs("../models/", exist_ok=True)
-        joblib.dump(model, '../models/iris_model.pkl')
+        os.makedirs("models/", exist_ok=True)
+        joblib.dump(model, 'models/iris_model.pkl')
         print(f"Модель обучена. Accuracy: {accuracy:.4f}")
         print("Модель и метрики залогированы в MLflow с input_example и signature.")
         
@@ -138,8 +137,8 @@ def main():
     # 4. MLflow эксперимент
     model, accuracy = mlflow_experiment(df)
     print("Результаты:")
-    print("- Deepchecks отчет: ../reports/deepchecks_report.html")
-    print("- EvidentlyAI отчет: ../reports/evidently_report.html") 
+    print("- Deepchecks отчет: reports/deepchecks_report.html")
+    print("- EvidentlyAI отчет: reports/evidently_report.html") 
     print("- MLflow эксперименты: ./mlruns")
     print("- Модель: models/iris_model.pkl")
 
