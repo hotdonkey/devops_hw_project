@@ -1,3 +1,3 @@
-.github/**
-.gitlab-ci.yml
-.github/workflows/ml-pipeline.yml
+/.github/**
+/.gitlab-ci.yml
+/.github/workflows/ml-pipeline.yml
