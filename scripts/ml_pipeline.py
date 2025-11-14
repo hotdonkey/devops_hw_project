@@ -48,6 +48,11 @@ def deepchecks_analysis(df):
     integrity_result.save_as_html('reports/deepchecks_report.html')
     print("Deepchecks отчет сохранен в reports/deepchecks_report.html")
     
+    # Сохраняем JSON-отчёт
+    with open('reports/deepchecks_report.json', 'w', encoding='utf-8') as f:
+        f.write(integrity_result.to_json())
+    print("Deepchecks JSON-отчёт сохранён в reports/deepchecks_report.json")
+    
     return integrity_result
 
 
